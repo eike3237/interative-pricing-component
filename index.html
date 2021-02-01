@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" src="style.css"/>
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
@@ -16,24 +17,44 @@
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <div class="content">
+    Simple, traffic-based pricing
+    Sign-up for our 30-day trial. No credit card required. 
+  </div>
 
-  Pageviews
-  $ /month
+  <div class="main">
+    Pageviews
+    <div class="main-slideContainer">
+      <input type="range" min="1" max="100" value="50" id="price"/>
+    </div>
+    
+    <div class="main-priceSelected">
+      <div class="main-priceFeatured">$ </div> /month
+    </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+    <div class="main-discount">
+      Monthly Billing
+      <input type="checkbox" id="switch" name="discount">
+      Yearly Billing 25% discount
+    </div>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+    <div class="main-advantages">
+      Unlimited websites
+      100% data ownership
+      Email reports
+    </div>
 
-  Start my trial
+    <button type="button">Start my trial</button>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/eike3237">Your Name Here</a>.
   </div>
+
+  
 </body>
+
+<script src="script.js" > </script>
+
 </html>
