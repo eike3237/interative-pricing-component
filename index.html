@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" src="style.css"/>
+  <link rel="stylesheet" href="style.css"/>
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
@@ -18,24 +18,32 @@
 <body>
 
   <div class="content">
-    Simple, traffic-based pricing
-    Sign-up for our 30-day trial. No credit card required. 
+    <img src="images/pattern-circles.svg"/>
+    <div class="title">Simple, traffic-based pricing</div>
+    <div class="content-text">
+      <p>Sign-up for our 30-day trial.</p>
+      <p>No credit card required.</p>
+    </div> 
   </div>
 
   <div class="main">
-    Pageviews
+    <span id="pageview">100 K PAGEVIEWS</span>
     <div class="main-slideContainer">
-      <input type="range" min="1" max="100" value="50" id="price"/>
+      <input type="range" min="1" max="100" value="50" class="slider" id="price"/>
     </div>
     
-    <div class="main-priceSelected">
-      <div class="main-priceFeatured">$ </div> /month
+    <div class="main-priceSelected" style="display: flex;
+    flex-direction: row;">
+      <div class="main-priceFeatured">$16.00 </div> / month
     </div>
 
     <div class="main-discount">
       Monthly Billing
-      <input type="checkbox" id="switch" name="discount">
-      Yearly Billing 25% discount
+      <div class="toggle">
+        <input type="checkbox" id="switch" name="discount">
+        <label for="switch">Toggle</label>
+      </div>
+      Yearly Billing <span>-25%</span>
     </div>
 
     <div class="main-advantages">
