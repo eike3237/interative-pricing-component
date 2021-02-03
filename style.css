@@ -69,15 +69,19 @@ body {
 
 }
 
-.main span {
-    color: hsl(225, 20%, 60%);
-    font-weight: 600;
+.main-slideContainer {
     margin-top: 30px;
-    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-slideContainer {
+.main-slideContainer span {
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
     margin-top: 10px;
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*The slider itself*/
