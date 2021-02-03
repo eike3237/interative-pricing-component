@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    margin-top: 100px;    
+    margin-top: 75px;    
 }
 
 .content img {
@@ -59,12 +59,13 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px 10px hsla(228, 100%, 99%, 0.747);
 
-    margin-top: 30px;
+    margin: 30px 20px 0px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 25px;
 
 }
 
@@ -124,7 +125,7 @@ body {
 /*A TERMINAR COLOR DO RANGE*/
 /*Price*/
 .main-priceSelected {
-    margin-top: 20px;
+    margin-top: 30px;
     color:  hsl(225, 20%, 60%);
     font-family: 'Manrope';
 
@@ -142,7 +143,7 @@ body {
 
 .main-discount {
     color:  hsl(225, 20%, 60%);
-    margin-top: 20px;
+    margin-top: 30px;
 
     display: flex;
     flex-direction: row;
@@ -151,6 +152,13 @@ body {
 .main-discount span {
     margin-top: 0;
     margin: 0 1px;
+    background-color: hsla(15, 89%, 82%, 0.897);
+    color: hsl(4, 100%, 70%);
+    padding: 5px 8px;
+    border-radius: 25px;
+    margin-left: 5px;
+    font-size: 12px;
+    width: fit-content;
 }
 
 /*Toggle Switch*/
@@ -198,4 +206,52 @@ input:checked + label::after { /*When invisible checkbox is marked AND label is 
 
 label:active:after{ /*Just giving an effect of transition*/
     width: 45px; 
+}
+
+/*Advantages*/
+.main-advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin-top: 40px;
+    border-top: solid;
+    border-width: thin;
+    color:hsl(225, 20%, 60%);
+
+}
+
+.main-advantages span {
+    padding: 5px 0;
+    margin-top: 0px;
+}
+
+.main-advantages span:first-child {
+    margin-top: 20px 
+}
+
+button {
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 30px;
+    width: 175px;
+    height: 40px;
+    background-color:hsl(227, 35%, 25%);
+    color: hsl(225, 20%, 60%);
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.attribution {
+    font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: auto;
+    font-weight: 500;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(227, 35%, 25%) !important;
+    font-weight: 700;
 }
