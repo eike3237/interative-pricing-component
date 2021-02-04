@@ -14,7 +14,12 @@ var pageview = document.getElementById('pageview');
 pageview.innerHTML = (slider.value * 10) + ' K PAGEVIEWS';
 
 slider.oninput = function(){ /*oninput means when some value be selected, something happens in the slider other words*/
-    pageview.innerHTML = (slider.value * 10) + ' K PAGEVIEWS'; /*To keeps uploaded*/
+    if(slider.value == 100){
+        pageview.innerHTML = '1M PAGEVIEWS';
+    } else {
+        pageview.innerHTML = (slider.value * 10) + ' K PAGEVIEWS'; /*To keeps uploaded*/
+    }
+    
 }
 
 slider.addEventListener("mousemove", function(){
