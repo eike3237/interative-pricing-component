@@ -89,7 +89,8 @@ body {
     -webkit-appearance: none; /*Hide default background/appearance*/
     appearance: none;
     height: 10px;
-    background: hsl(224, 65%, 95%);
+    /* background: hsl(224, 65%, 95%); */
+    background: linear-gradient(90deg, rgb(16, 213, 194) 50%, rgb(234, 238, 251) 50%); /*Used to change color before/after using javascript by the percentage*/
     outline: none;
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /*0.2 sec transition on hover*/
@@ -104,7 +105,7 @@ body {
     opacity: 1; /*Fully opacity on hover*/
 }
 
-.slider::-webkit-slider-thumb { /*The slider/Ball */
+.slider::-webkit-slider-thumb { /*The slider/Ball -> TO GOOGLE CHROME*/
     -webkit-appearance: none; /*just to confirm*/
     appearance: none;
     width: 30px;
@@ -118,7 +119,7 @@ body {
     box-shadow: 5px 5px 10px hsla(174, 86%, 45%, 0.664);
 }
 
-.slider::-moz-range-thumb {
+.slider::-moz-range-thumb { /*MOZILLA*/
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -127,7 +128,7 @@ body {
 }
 
 /*A TERMINAR COLOR DO RANGE*/
-/*Price*/
+/*Price -> COLOCAR FLOAT RIGHT NA HORA DE JOGAR PRO DESKTOP*/
 .main-priceSelected {
     margin-top: 30px;
     color:  hsl(225, 20%, 60%);
@@ -246,6 +247,15 @@ button {
     color: hsl(225, 20%, 60%);
     margin-top: 30px;
     font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.95;
+    transition: opacity .2s;
+}
+
+button:hover {
+    color: hsl(226, 52%, 78%);
+    opacity: 1;
 }
 
 .attribution {
