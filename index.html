@@ -21,7 +21,7 @@
     <img src="images/pattern-circles.svg"/>
     <div class="title">Simple, traffic-based pricing</div>
     <div class="content-text">
-      <p>Sign-up for our 30-day trial.</p>
+      <p>Sign-up for our 30-day trial. </p>
       <p>No credit card required.</p>
     </div> 
   </div>
@@ -30,12 +30,12 @@
     <div class="main-slideContainer">
       <span id="pageview">100 K PAGEVIEWS</span>
       <input type="range" min="1" max="100" value="50" class="slider" id="MyRange"/>
+      
+      <div class="main-priceSelected" >
+        <div class="main-priceFeatured" id="price">$16.00 </div> / month
+      </div>
     </div>
     
-    <div class="main-priceSelected" style="display: flex;
-    flex-direction: row;">
-      <div class="main-priceFeatured" id="price">$16.00 </div> / month
-    </div>
 
     <div class="main-discount">
       Monthly Billing
@@ -43,16 +43,19 @@
         <input type="checkbox" id="switch" name="discount">
         <label for="switch">Toggle</label>
       </div>
-      Yearly Billing <span>-25%</span>
+      Yearly Billing <span id="Percentage-discount">-25%</span>
     </div>
 
     <div class="main-advantages">
-      <span class="adv0">Unlimited websites</span>
-      <span class="adv1">100% data ownership</span>
-      <span class="adv2">Email reports</span>
+      <div class="main-advantages_text">
+        <span class="adv0">Unlimited websites</span>
+        <span class="adv1">100% data ownership</span>
+        <span class="adv2">Email reports</span>
+      </div>
+      
+      <button type="button">Start my trial</button>
     </div>
 
-    <button type="button">Start my trial</button>
   </div>
   
   <div class="attribution">

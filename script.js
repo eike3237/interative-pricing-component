@@ -94,3 +94,32 @@ function pricePerPageview() {
         };
     };
 };
+
+/* Changing order of div for desktop version */
+// var featuredPrice = document.getElementsByClassName('main-priceSelected');
+// console.log(featuredPrice[0]);
+// var inputSlider = document.getElementsByClassName('slider');
+// console.log(inputSlider[0]);
+
+// featuredPrice.insertBefore(inputSlider);
+
+deviceWidth();
+
+function deviceWidth() {
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
+    
+    var discountText = window.document.getElementById('Percentage-discount');
+
+    if(screenWidth > 1366) {
+        console.log('higher than 1366');
+        discountText.innerHTML = '25% discount';
+    } else if (screenWidth <= 700) {
+        console.log('less than 1366');
+        discountText.innerHTML = '-25%';
+    }
+}
+
+window.addEventListener('resize', function(){ /*When the size of screen changes*/
+    deviceWidth();
+});
