@@ -51,7 +51,7 @@ sliderMobile[0].addEventListener("touchmove", function(){
 
 /*To upload when the toggle switch be pressed*/
 checkbox.addEventListener("change", function() {
-    defaultPrice();
+    pricePerPageview();
 });
 
 function pricePerPageview() {
