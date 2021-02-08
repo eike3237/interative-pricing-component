@@ -123,3 +123,7 @@ function deviceWidth() {
 window.addEventListener('resize', function(){ /*When the size of screen changes*/
     deviceWidth();
 });
+
+/*------------- TO FINISH ------------*/
+// var switchDesktop = document.
+// console.log(switchDesktop);
